@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @pedrozaz
+- 👀 I’m interested in Computer Science, Software Engineering and Hardware manufacturing;
+- 🌱 I’m currently learning Computer Engineering in general;
+- 📫 How to reach me: linktr.ee/pdrzgui
