@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I am currently graduating from Computer Engineering<br><br>🌱 Focusing to learn more about Spring Boot and PostgreSQL<br><br>📫 How to reach me guilhermebarb0sa@proton.me
+🔭 I am currently graduating Computer Engineering<br><br>🌱 Focusing to learn more about Spring Boot and PostgreSQL<br><br>📫 How to reach me guilhermebarb0sa@proton.me
 
 
 ## 🌐 Socials:
