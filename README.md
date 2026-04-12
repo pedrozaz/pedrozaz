@@ -1,4 +1,3 @@
-<h1 align="center">Hi, I'm Guilherme Pedroza</h1>
 <p align="center">
   Backend Engineer • AI/ML Builder • Systems Enthusiast
 </p>
