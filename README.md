@@ -28,7 +28,7 @@ Spring Boot • Spring Security • JPA/Hibernate • WebSocket/STOMP • REST A
 TensorFlow • PyTorch • NumPy • Pandas • scikit-learn • PostgreSQL
 
 **Infrastructure / Tools**  
-Docker • Docker Compose • Redis • MongoDB • Git • Linux
+Docker • Docker Compose • Redis • Kafka • Git • Linux
 
 ---
 
