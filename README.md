@@ -18,16 +18,10 @@
 ## Tech Stack
 
 **Languages**  
-Java • Python • Rust • SQL • C
-
-**Backend**  
-Spring Boot • Spring Security • JPA/Hibernate • WebSocket/STOMP • REST APIs
-
-**Data / AI**  
-TensorFlow • PyTorch • NumPy • Pandas • scikit-learn • PostgreSQL
+Python • Rust • SQL • Java
 
 **Infrastructure / Tools**  
-Docker • Docker Compose • Redis • Kafka • Git • Linux
+Docker • Git • Linux • PostgreSQL
 
 ---
 
