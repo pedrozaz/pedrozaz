@@ -12,7 +12,7 @@
 
 - Undergraduate engineer from Brazil
 - Focused on **Backend Engineering**, **Applied AI/ML**, and **System Design**
-- Most comfortable with **Java/Spring Boot**, **Python**, **PostgreSQL**, and increasingly **Rust**
+- Most comfortable with **Java/Spring Boot**, **Python**, **SQL**, and increasingly **Rust**
 - Interested in building systems that are not just functional, but technically well-structured, scalable, and explainable
 
 ## Tech Stack
