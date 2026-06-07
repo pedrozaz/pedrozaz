@@ -20,7 +20,7 @@
 **Languages**  
 Python • Rust • SQL • Java
 
-**Infrastructure / Tools**  
+**Tools**  
 Docker • Git • Linux • PostgreSQL
 
 ---
