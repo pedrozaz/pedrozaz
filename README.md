@@ -1,5 +1,5 @@
 <p align="center">
-  Backend Engineer • AI/ML Builder • Systems Enthusiast
+  Engineer • Low-level • Systems Enthusiast
 </p>
 
 <p align="center">
@@ -11,17 +11,15 @@
 ## About me
 
 - Undergraduate engineer from Brazil
-- Focused on **Backend Engineering**, **Applied AI/ML**, and **System Design**
-- Most comfortable with **Java/Spring Boot**, **Python**, **SQL**, and increasingly **Rust**
-- Interested in building systems that are not just functional, but technically well-structured, scalable, and explainable
+- Focused on **Low-level Engineering**, **Applied AI/ML**, and **Embedded Systems**
 
 ## Tech Stack
 
 **Languages**  
-Python • Rust • SQL • Java
+`Python` • `Rust` • `SQL` • `Java` • `C`
 
 **Tools**  
-Docker • Git • Linux • PostgreSQL
+`Docker` • `Git` • `Linux` • `QEMU`
 
 ---
 
