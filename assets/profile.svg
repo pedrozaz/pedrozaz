@@ -1,71 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 500" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090d16" />
-      <stop offset="50%" stop-color="#0d1422" />
-      <stop offset="100%" stop-color="#080c14" />
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#060a14" />
     </linearGradient>
 
     <!-- Senna Colors -->
-    <linearGradient id="senna-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="senna-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffd100" />
       <stop offset="100%" stop-color="#ffb700" />
     </linearGradient>
 
-    <linearGradient id="senna-green" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="senna-green" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#009c3b" />
       <stop offset="100%" stop-color="#007a2f" />
     </linearGradient>
 
-    <linearGradient id="senna-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="senna-blue" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#002776" />
       <stop offset="100%" stop-color="#001848" />
     </linearGradient>
 
-    <!-- Subtle Ambient Glow on Right -->
-    <radialGradient id="right-glow" cx="95%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#ffd100" stop-opacity="0.08" />
-      <stop offset="60%" stop-color="#009c3b" stop-opacity="0.03" />
+    <!-- Ambient Subtle Glow on Right -->
+    <radialGradient id="right-glow" cx="100%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffd100" stop-opacity="0.09" />
+      <stop offset="50%" stop-color="#009c3b" stop-opacity="0.04" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Subtle Grid Overlay -->
-    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.3" />
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.3" />
     </pattern>
 
     <style>
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.6; }
+      @keyframes softPulse {
+        0%, 100% { opacity: 0.7; }
         50% { opacity: 1; }
       }
-      .ambient-pulse { animation: pulseGlow 4s ease-in-out infinite; }
+      .ambient-glow { animation: softPulse 4s ease-in-out infinite; }
       .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; }
       .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
     </style>
   </defs>
 
-  <clipPath id="card-corners">
-    <rect width="850" height="520" rx="12" />
+  <clipPath id="card-clip">
+    <rect width="850" height="500" rx="14" />
   </clipPath>
 
-  <g clip-path="url(#card-corners)">
-    <!-- Base Background -->
-    <rect width="850" height="520" fill="url(#bg-grad)" />
-    <rect width="850" height="520" fill="url(#grid-pattern)" />
-    <rect width="850" height="520" fill="url(#right-glow)" class="ambient-pulse" />
+  <g clip-path="url(#card-clip)">
+    <!-- Base Dark Background -->
+    <rect width="850" height="500" fill="url(#card-bg)" />
+    <rect width="850" height="500" fill="url(#grid-pattern)" />
+    <rect width="850" height="500" fill="url(#right-glow)" class="ambient-glow" />
 
-    <!-- ================= SENNA ICONIC TRIPLE STRIPES (RIGHT BORDER ONLY) ================= -->
-    <g transform="translate(805, 0)">
-      <!-- Blue Stripe (Inner) -->
-      <rect x="0" y="0" width="7" height="520" fill="url(#senna-blue)" />
+    <!-- ================= SENNA ICONIC RACING STRIPES (RIGHT FLANK) ================= -->
+    <!-- Clean, stylish angled sash positioned firmly in the top-right quadrant -->
+    <g transform="translate(680, 0)">
+      <!-- Yellow Main Background Band -->
+      <polygon points="40,0 170,0 170,180 0,180" fill="url(#senna-yellow)" opacity="0.95" />
       
-      <!-- Green Stripe (Middle) -->
-      <rect x="11" y="0" width="8" height="520" fill="url(#senna-green)" />
+      <!-- Green Racing Stripe -->
+      <polygon points="15,40 170,40 170,68 -5,68" fill="url(#senna-green)" />
       
-      <!-- Yellow Stripe (Outer) -->
-      <rect x="23" y="0" width="16" height="520" fill="url(#senna-yellow)" />
+      <!-- Blue Racing Stripe -->
+      <polygon points="-5,82 170,82 170,110 -25,110" fill="url(#senna-blue)" />
+
+      <!-- Minimalist Senna Tribute Badge -->
+      <text x="145" y="160" class="font-mono" font-size="11" font-weight="900" fill="#080d1a" text-anchor="end" letter-spacing="1.5">SENNA // #12</text>
     </g>
 
     <!-- ================= HEADER SECTION ================= -->
@@ -77,7 +81,7 @@
         <text x="24" y="15" class="font-mono" font-size="10" font-weight="bold" fill="#ffd100" letter-spacing="1">SYSTEMS // DEV</text>
       </g>
 
-      <!-- Name Title -->
+      <!-- Main Name -->
       <text x="0" y="62" class="font-mono" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="1.5">
         pedroza<tspan fill="#ffd100">.</tspan>
       </text>
@@ -89,10 +93,10 @@
     </g>
 
     <!-- Section Divider Line -->
-    <line x1="45" y1="150" x2="770" y2="150" stroke="#1e293b" stroke-width="1" />
+    <line x1="45" y1="145" x2="660" y2="145" stroke="#1e293b" stroke-width="1" />
 
     <!-- ================= ABOUT SECTION ================= -->
-    <g transform="translate(45, 180)">
+    <g transform="translate(45, 175)">
       <text x="0" y="0" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffd100" letter-spacing="1.5">// ABOUT</text>
       
       <text x="0" y="26" class="font-sans" font-size="14.5" fill="#ffffff" font-weight="500">
@@ -107,7 +111,7 @@
     </g>
 
     <!-- ================= TECH STACK GRID ================= -->
-    <g transform="translate(45, 290)">
+    <g transform="translate(45, 280)">
       <text x="0" y="0" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffd100" letter-spacing="1.5">// TECH ARSENAL</text>
 
       <!-- Category 1: Languages -->
@@ -138,7 +142,7 @@
       </g>
 
       <!-- Category 2: Tools & Environments -->
-      <g transform="translate(0, 52)">
+      <g transform="translate(0, 50)">
         <text x="0" y="17" class="font-mono" font-size="11" font-weight="bold" fill="#94a3b8">ENVIRONMENT</text>
         
         <g transform="translate(130, 0)">
@@ -161,39 +165,39 @@
       </g>
 
       <!-- Category 3: Domains -->
-      <g transform="translate(0, 88)">
+      <g transform="translate(0, 84)">
         <text x="0" y="17" class="font-mono" font-size="11" font-weight="bold" fill="#94a3b8">DOMAINS</text>
         
         <g transform="translate(130, 0)">
           <!-- Low-Level -->
           <rect x="0" y="0" width="160" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
-          <text x="80" y="16.5" class="font-mono" font-size="11" font-weight="600" fill="#f1f5f9" text-anchor="middle">Low-Level Systems</text>
+          <text x="80" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Low-Level Systems</text>
 
           <!-- Applied AI -->
           <rect x="168" y="0" width="135" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
-          <text x="235.5" y="16.5" class="font-mono" font-size="11" font-weight="600" fill="#f1f5f9" text-anchor="middle">Applied AI / ML</text>
+          <text x="235.5" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Applied AI / ML</text>
 
           <!-- Embedded -->
           <rect x="311" y="0" width="150" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
-          <text x="386" y="16.5" class="font-mono" font-size="11" font-weight="600" fill="#f1f5f9" text-anchor="middle">Embedded</text>
+          <text x="386" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Embedded &amp; Arch</text>
         </g>
       </g>
     </g>
 
     <!-- ================= FOOTER ================= -->
-    <g transform="translate(45, 455)">
-      <line x1="0" y1="0" x2="725" y2="0" stroke="#1e293b" stroke-width="1" />
+    <g transform="translate(45, 440)">
+      <line x1="0" y1="0" x2="760" y2="0" stroke="#1e293b" stroke-width="1" />
       
-      <text x="0" y="26" class="font-sans" font-size="12" font-style="italic" fill="#94a3b8">
+      <text x="0" y="24" class="font-sans" font-size="12" font-style="italic" fill="#94a3b8">
         "I have no idols. I admire work, dedication and competence."
       </text>
       
-      <g transform="translate(725, 14)">
+      <g transform="translate(760, 12)">
         <text x="0" y="12" class="font-mono" font-size="11" font-weight="bold" fill="#ffd100" text-anchor="end">guilhermebarb0sa@proton.me</text>
       </g>
     </g>
   </g>
 
   <!-- Outer Border -->
-  <rect width="850" height="520" rx="12" fill="none" stroke="#243247" stroke-width="1" />
+  <rect width="850" height="500" rx="14" fill="none" stroke="#243247" stroke-width="1.2" />
 </svg>
