@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#060a14" />
+    </linearGradient>
+
+    <!-- Senna Colors -->
+    <linearGradient id="senna-yellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd100" />
+      <stop offset="100%" stop-color="#ffb700" />
+    </linearGradient>
+
+    <linearGradient id="senna-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#009c3b" />
+      <stop offset="100%" stop-color="#007a2f" />
+    </linearGradient>
+
+    <linearGradient id="senna-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002776" />
+      <stop offset="100%" stop-color="#001848" />
+    </linearGradient>
+
+    <!-- Ambient Subtle Glow on Right -->
+    <radialGradient id="right-glow" cx="100%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffd100" stop-opacity="0.09" />
+      <stop offset="50%" stop-color="#009c3b" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#1e293b" stroke-width="0.5" stroke-opacity="0.3" />
+    </pattern>
+
+    <style>
+      @keyframes softPulse {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; }
+      }
+      .ambient-glow { animation: softPulse 4s ease-in-out infinite; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <clipPath id="card-clip">
+    <rect width="850" height="500" rx="14" />
+  </clipPath>
+
+  <g clip-path="url(#card-clip)">
+    <!-- Base Dark Background -->
+    <rect width="850" height="500" fill="url(#card-bg)" />
+    <rect width="850" height="500" fill="url(#grid-pattern)" />
+    <rect width="850" height="500" fill="url(#right-glow)" class="ambient-glow" />
+
+    <!-- ================= SENNA ICONIC RACING STRIPES (RIGHT FLANK) ================= -->
+    <!-- Clean, stylish angled sash positioned firmly in the top-right quadrant -->
+    <g transform="translate(680, 0)">
+      <!-- Yellow Main Background Band -->
+      <polygon points="40,0 170,0 170,180 0,180" fill="url(#senna-yellow)" opacity="0.95" />
+      
+      <!-- Green Racing Stripe -->
+      <polygon points="15,40 170,40 170,68 -5,68" fill="url(#senna-green)" />
+      
+      <!-- Blue Racing Stripe -->
+      <polygon points="-5,82 170,82 170,110 -25,110" fill="url(#senna-blue)" />
+
+      <!-- Minimalist Senna Tribute Badge -->
+      <text x="145" y="160" class="font-mono" font-size="11" font-weight="900" fill="#080d1a" text-anchor="end" letter-spacing="1.5">SENNA // #12</text>
+    </g>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <g transform="translate(45, 42)">
+      <!-- Status Badge -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="135" height="22" rx="4" fill="#ffd100" fill-opacity="0.12" stroke="#ffd100" stroke-width="1" />
+        <circle cx="12" cy="11" r="3" fill="#ffd100" />
+        <text x="24" y="15" class="font-mono" font-size="10" font-weight="bold" fill="#ffd100" letter-spacing="1">SYSTEMS // DEV</text>
+      </g>
+
+      <!-- Main Name -->
+      <text x="0" y="62" class="font-mono" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="1.5">
+        pedroza<tspan fill="#ffd100">.</tspan>
+      </text>
+
+      <!-- Subtitle -->
+      <text x="2" y="88" class="font-sans" font-size="14.5" fill="#e2e8f0" font-weight="400" letter-spacing="0.3">
+        Low-Level Computing <tspan fill="#ffd100">•</tspan> Applied AI &amp; ML <tspan fill="#009c3b">•</tspan> Distributed Architecture
+      </text>
+    </g>
+
+    <!-- Section Divider Line -->
+    <line x1="45" y1="145" x2="660" y2="145" stroke="#1e293b" stroke-width="1" />
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <g transform="translate(45, 175)">
+      <text x="0" y="0" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffd100" letter-spacing="1.5">// ABOUT</text>
+      
+      <text x="0" y="26" class="font-sans" font-size="14.5" fill="#ffffff" font-weight="500">
+        Undergraduate engineering student from Brazil.
+      </text>
+      <text x="0" y="48" class="font-sans" font-size="14" fill="#e2e8f0" font-weight="400">
+        Building performance-oriented software, exploring memory efficiency, Linux internals,
+      </text>
+      <text x="0" y="68" class="font-sans" font-size="14" fill="#cbd5e1" font-weight="400">
+        applied machine learning pipelines, and distributed backend systems.
+      </text>
+    </g>
+
+    <!-- ================= TECH STACK GRID ================= -->
+    <g transform="translate(45, 280)">
+      <text x="0" y="0" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffd100" letter-spacing="1.5">// TECH ARSENAL</text>
+
+      <!-- Category 1: Languages -->
+      <g transform="translate(0, 16)">
+        <text x="0" y="17" class="font-mono" font-size="11" font-weight="bold" fill="#94a3b8">LANGUAGES</text>
+        
+        <g transform="translate(130, 0)">
+          <!-- Rust -->
+          <rect x="0" y="0" width="68" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="34" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Rust</text>
+
+          <!-- C -->
+          <rect x="76" y="0" width="44" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="98" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">C</text>
+
+          <!-- Python -->
+          <rect x="128" y="0" width="80" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="168" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Python</text>
+
+          <!-- SQL -->
+          <rect x="216" y="0" width="58" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="245" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">SQL</text>
+
+          <!-- Java -->
+          <rect x="282" y="0" width="64" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="314" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Java</text>
+        </g>
+      </g>
+
+      <!-- Category 2: Tools & Environments -->
+      <g transform="translate(0, 50)">
+        <text x="0" y="17" class="font-mono" font-size="11" font-weight="bold" fill="#94a3b8">ENVIRONMENT</text>
+        
+        <g transform="translate(130, 0)">
+          <!-- Linux -->
+          <rect x="0" y="0" width="72" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="36" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Linux</text>
+
+          <!-- Docker -->
+          <rect x="80" y="0" width="78" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="119" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Docker</text>
+
+          <!-- QEMU -->
+          <rect x="166" y="0" width="68" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="200" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">QEMU</text>
+
+          <!-- Git -->
+          <rect x="242" y="0" width="54" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="269" y="16.5" class="font-mono" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Git</text>
+        </g>
+      </g>
+
+      <!-- Category 3: Domains -->
+      <g transform="translate(0, 84)">
+        <text x="0" y="17" class="font-mono" font-size="11" font-weight="bold" fill="#94a3b8">DOMAINS</text>
+        
+        <g transform="translate(130, 0)">
+          <!-- Low-Level -->
+          <rect x="0" y="0" width="160" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="80" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Low-Level Systems</text>
+
+          <!-- Applied AI -->
+          <rect x="168" y="0" width="135" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="235.5" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Applied AI / ML</text>
+
+          <!-- Embedded -->
+          <rect x="311" y="0" width="150" height="25" rx="4" fill="#131d2e" stroke="#2e3f59" stroke-width="1" />
+          <text x="386" y="16.5" class="font-mono" font-size="11.5" font-weight="600" fill="#f1f5f9" text-anchor="middle">Embedded &amp; Arch</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- ================= FOOTER ================= -->
+    <g transform="translate(45, 440)">
+      <line x1="0" y1="0" x2="760" y2="0" stroke="#1e293b" stroke-width="1" />
+      
+      <text x="0" y="24" class="font-sans" font-size="12" font-style="italic" fill="#94a3b8">
+        "I have no idols. I admire work, dedication and competence."
+      </text>
+      
+      <g transform="translate(760, 12)">
+        <text x="0" y="12" class="font-mono" font-size="11" font-weight="bold" fill="#ffd100" text-anchor="end">guilhermebarb0sa@proton.me</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Outer Border -->
+  <rect width="850" height="500" rx="14" fill="none" stroke="#243247" stroke-width="1.2" />
+</svg>
