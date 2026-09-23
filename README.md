@@ -1,17 +1,9 @@
-<div align="center">
+<p align="center">
+  <img src="assets/neofetch-profile.svg" width="100%" alt="Guilherme Pedroza — Rust, low-level systems, and machine learning" />
+</p>
 
-<!-- Cohesive Animated Profile Canvas (Ayrton Senna Racing Theme) -->
-<img src="assets/profile.svg" width="100%" alt="pedroza // profile" />
+## About
 
-<br/><br/>
+Computer Engineering student focused on **Rust, low-level systems, and machine learning**. I enjoy working close to memory, concurrency, and performance, then carrying those ideas upward into distributed backends and applied AI.
 
-<!-- GitHub Stats Cards -->
-<img src="profile-summary-card-output/github_dark/0-profile-details.svg" width="100%" alt="GitHub Profile Details" />
-
-<br/><br/>
-
-<img src="profile-summary-card-output/github_dark/2-most-commit-language.svg" height="150" alt="Most Committed Languages" />
-&nbsp;&nbsp;
-<img src="profile-summary-card-output/github_dark/1-repos-per-language.svg" height="150" alt="Repositories Per Language" />
-
-</div>
+Currently working in Artificial Intelligence R&D, building systems for real-world problems.

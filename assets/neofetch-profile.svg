@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc" data-version="2">
+  <title id="title">Guilherme Pedroza — developer profile</title>
+  <desc id="desc">A neofetch-inspired profile showing the Arch Linux logo and information about Rust, low-level systems, and machine learning.</desc>
+
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111318"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67d4ff"/>
+      <stop offset=".55" stop-color="#79a7ff"/>
+      <stop offset="1" stop-color="#aa8bff"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#739cff" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#739cff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+
+    <style>
+      .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+      .cursor { animation: blink 1.15s steps(2, end) infinite; }
+      .logo { animation: breathe 5s ease-in-out infinite; }
+
+      @keyframes blink {
+        0%, 44% { opacity: 1; }
+        45%, 100% { opacity: 0; }
+      }
+
+      @keyframes breathe {
+        0%, 100% { opacity: .88; }
+        50% { opacity: 1; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="918" height="358" rx="22" fill="url(#surface)" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M1 49H919" stroke="#ffffff" stroke-opacity=".08"/>
+  <circle cx="748" cy="184" r="190" fill="url(#glow)" filter="url(#blur)"/>
+
+  <g opacity=".82">
+    <circle cx="26" cy="25" r="5" fill="#ff6b68"/>
+    <circle cx="46" cy="25" r="5" fill="#ffc75f"/>
+    <circle cx="66" cy="25" r="5" fill="#52d273"/>
+  </g>
+
+  <text x="460" y="29" class="mono" fill="#717988" font-size="11" text-anchor="middle">~/profile</text>
+
+  <g class="logo" transform="translate(54 67) scale(.84)" fill="url(#accent)">
+    <path d="m127.98 12.07c-10.316 25.309-16.543 41.855-28.031 66.41 7.043 7.4609 15.691 16.156 29.734 25.977-15.098-6.207-25.395-12.445-33.094-18.918-14.703 30.68-37.742 74.391-84.492 158.39 36.746-21.219 65.23-34.293 91.773-39.289-1.1406-4.8945-1.7852-10.195-1.7422-15.734l.042969-1.1719c.58203-23.551 12.828-41.645 27.336-40.418 14.508 1.2266 25.781 21.316 25.199 44.867-.10938 4.4219-.60938 8.6914-1.4805 12.641 26.258 5.1328 54.438 18.18 90.684 39.105-7.1484-13.156-13.527-25.016-19.621-36.316-9.5938-7.4336-19.605-17.117-40.023-27.594 14.035 3.6406 24.082 7.8516 31.914 12.555-61.941-115.32-66.957-130.66-88.199-180.5z" fill-rule="evenodd"/>
+  </g>
+
+  <g class="mono">
+    <text x="350" y="86" font-size="17" font-weight="700">
+      <tspan fill="#f4f6fa">pedrozaz</tspan><tspan fill="#67d4ff">@github</tspan><tspan class="cursor" fill="#aa8bff">_</tspan>
+    </text>
+    <rect x="350" y="98" width="236" height="1.5" rx="1" fill="url(#accent)" opacity=".9"/>
+
+    <g font-size="12.5" xml:space="preserve">
+      <text x="350" y="128"><tspan fill="#79a7ff">role</tspan><tspan fill="#596171">       : </tspan><tspan fill="#d8dde7">AI Research &amp; Development</tspan></text>
+      <text x="350" y="157"><tspan fill="#79a7ff">degree</tspan><tspan fill="#596171">     : </tspan><tspan fill="#d8dde7">Computer Engineering</tspan></text>
+      <text x="350" y="186"><tspan fill="#79a7ff">focus</tspan><tspan fill="#596171">      : </tspan><tspan fill="#d8dde7">Rust · low-level · machine learning</tspan></text>
+      <text x="350" y="215"><tspan fill="#79a7ff">interests</tspan><tspan fill="#596171">  : </tspan><tspan fill="#d8dde7">distributed systems · artificial intelligence</tspan></text>
+      <text x="350" y="244"><tspan fill="#79a7ff">languages</tspan><tspan fill="#596171">  : </tspan><tspan fill="#d8dde7">Rust · Python · C · Java · SQL</tspan></text>
+      <text x="350" y="273"><tspan fill="#79a7ff">environment</tspan><tspan fill="#596171">: </tspan><tspan fill="#d8dde7">Arch Linux · Neovim · zsh</tspan></text>
+      <text x="350" y="302"><tspan fill="#79a7ff">building</tspan><tspan fill="#596171">   : </tspan><tspan fill="#d8dde7">reliable systems, from bytes to models</tspan></text>
+    </g>
+
+    <g transform="translate(350 323)">
+      <rect width="24" height="9" rx="2" fill="#67d4ff"/>
+      <rect x="31" width="24" height="9" rx="2" fill="#70bdff"/>
+      <rect x="62" width="24" height="9" rx="2" fill="#79a7ff"/>
+      <rect x="93" width="24" height="9" rx="2" fill="#849dff"/>
+      <rect x="124" width="24" height="9" rx="2" fill="#957fff"/>
+      <rect x="155" width="24" height="9" rx="2" fill="#aa8bff"/>
+    </g>
+  </g>
+</svg>
