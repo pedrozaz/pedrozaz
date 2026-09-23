@@ -14,10 +14,10 @@ I build intelligent systems where research meets real-world constraints.
 
 Computer Engineering student working in **Artificial Intelligence R&D**, with a background in backend and systems programming.
 
-Currently developing AI agent solutions for real-world supply chain problems through **Uniube**, in partnership with the **TI · Datalab · GenAI team at Martins Trade and Distribution Services S/A**. Interested in distributed systems, concurrency, performance, and applied AI.
+My work spans **Rust systems programming, low-level computing, distributed backends, and applied machine learning**, with a focus on concurrency, performance, and architectural clarity.
 
 <p align="center">
-  <img src="assets/profile.svg" width="100%" alt="Current focus: applied AI, distributed systems, and performance engineering" />
+  <img src="assets/profile.svg" width="100%" alt="From bytes to models: Rust, low-level systems, performance, and machine learning" />
 </p>
 
 ## Selected work
