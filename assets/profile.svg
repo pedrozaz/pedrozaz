@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 208" role="img" aria-labelledby="title desc">
-  <title id="title">From bytes to models</title>
-  <desc id="desc">An animated path connecting memory, runtime, compute, and machine learning.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">Guilherme Pedroza — developer profile</title>
+  <desc id="desc">A neofetch-inspired profile showing an Arch Linux mark and information about Rust, low-level systems, and machine learning.</desc>
 
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
@@ -10,41 +10,31 @@
 
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#67d4ff"/>
-      <stop offset=".52" stop-color="#79a7ff"/>
+      <stop offset=".55" stop-color="#79a7ff"/>
       <stop offset="1" stop-color="#aa8bff"/>
     </linearGradient>
 
     <radialGradient id="glow">
-      <stop offset="0" stop-color="#6fa8ff" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#6fa8ff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#739cff" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#739cff" stop-opacity="0"/>
     </radialGradient>
 
     <filter id="blur">
-      <feGaussianBlur stdDeviation="18"/>
+      <feGaussianBlur stdDeviation="24"/>
     </filter>
 
     <style>
-      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
       .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
-      .path { stroke-dasharray: 3 9; animation: flow 6s linear infinite; }
-      .memory { animation: node 4s ease-in-out infinite; }
-      .runtime { animation: node 4s ease-in-out infinite 1s; }
-      .compute { animation: node 4s ease-in-out infinite 2s; }
-      .model { animation: node 4s ease-in-out infinite 3s; }
-      .bit-a { animation: bit 2.4s steps(2, end) infinite; }
-      .bit-b { animation: bit 2.4s steps(2, end) infinite 1.2s; }
+      .cursor { animation: blink 1.15s steps(2, end) infinite; }
+      .logo { animation: breathe 5s ease-in-out infinite; }
 
-      @keyframes flow {
-        to { stroke-dashoffset: -48; }
+      @keyframes blink {
+        0%, 44% { opacity: 1; }
+        45%, 100% { opacity: 0; }
       }
 
-      @keyframes node {
-        0%, 22%, 100% { opacity: .48; }
-        10% { opacity: 1; }
-      }
-
-      @keyframes bit {
-        0%, 100% { opacity: .35; }
+      @keyframes breathe {
+        0%, 100% { opacity: .88; }
         50% { opacity: 1; }
       }
 
@@ -54,55 +44,63 @@
     </style>
   </defs>
 
-  <rect x="1" y="1" width="918" height="206" rx="24" fill="url(#surface)" stroke="#ffffff" stroke-opacity=".11"/>
-  <circle cx="754" cy="91" r="140" fill="url(#glow)" filter="url(#blur)"/>
+  <rect x="1" y="1" width="918" height="358" rx="22" fill="url(#surface)" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M1 49H919" stroke="#ffffff" stroke-opacity=".08"/>
+  <circle cx="748" cy="184" r="190" fill="url(#glow)" filter="url(#blur)"/>
 
-  <g class="sans">
-    <text x="36" y="42" fill="#9ca5b5" font-size="12" font-weight="600" letter-spacing="1.7">SYSTEMS + INTELLIGENCE</text>
-    <text x="36" y="92" fill="#f7f8fa" font-size="28" font-weight="650">From bytes to models.</text>
-    <text x="36" y="126" fill="#9ca5b5" font-size="17" font-weight="500">Rust systems meet machine learning.</text>
-    <text x="36" y="169" fill="#707887" font-size="13">Low-level · concurrency · performance · applied ML</text>
+  <g opacity=".82">
+    <circle cx="26" cy="25" r="5" fill="#ff6b68"/>
+    <circle cx="46" cy="25" r="5" fill="#ffc75f"/>
+    <circle cx="66" cy="25" r="5" fill="#52d273"/>
+  </g>
+
+  <text x="460" y="29" class="mono" fill="#717988" font-size="11" text-anchor="middle">~/profile</text>
+
+  <g class="logo mono" fill="#67d4ff" font-size="12.5" xml:space="preserve">
+    <text x="34" y="78">                   -`</text>
+    <text x="34" y="92">                  .o+`</text>
+    <text x="34" y="106">                 `ooo/</text>
+    <text x="34" y="120">                `+oooo:</text>
+    <text x="34" y="134">               `+oooooo:</text>
+    <text x="34" y="148">               -+oooooo+:</text>
+    <text x="34" y="162">              `/:-:++oooo+:</text>
+    <text x="34" y="176">             `/++++/+++++++:</text>
+    <text x="34" y="190">            `/++++++++++++++:</text>
+    <text x="34" y="204">           `/+++ooooooooooooo/`</text>
+    <text x="34" y="218">          ./ooosssso++osssssso+`</text>
+    <text x="34" y="232">         .oossssso-````/ossssss+`</text>
+    <text x="34" y="246">        -osssssso.      :ssssssso.</text>
+    <text x="34" y="260">       :osssssss/        osssso+++.</text>
+    <text x="34" y="274">      /ossssssss/        +ssssooo/-</text>
+    <text x="34" y="288">    `/ossssso+/:-        -:/+osssso+-</text>
+    <text x="34" y="302">   `+sso+:-`                 `.-/+oso:</text>
+    <text x="34" y="316">  `++:.                           `-/+/</text>
+    <text x="34" y="330">  .`                                 `/</text>
   </g>
 
   <g class="mono">
-    <path d="M520 96 H875" fill="none" stroke="#536079" stroke-width="1" opacity=".45"/>
-    <path class="path" d="M520 96 H875" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+    <text x="350" y="86" font-size="17" font-weight="700">
+      <tspan fill="#f4f6fa">pedrozaz</tspan><tspan fill="#67d4ff">@github</tspan><tspan class="cursor" fill="#aa8bff">_</tspan>
+    </text>
+    <rect x="350" y="98" width="236" height="1.5" rx="1" fill="url(#accent)" opacity=".9"/>
 
-    <g class="memory">
-      <rect x="508" y="84" width="24" height="24" rx="5" fill="#0a0c10" stroke="#67d4ff" stroke-width="1.8"/>
-      <rect class="bit-a" x="514" y="90" width="4" height="4" rx="1" fill="#67d4ff"/>
-      <rect class="bit-b" x="522" y="90" width="4" height="4" rx="1" fill="#67d4ff"/>
-      <rect class="bit-b" x="514" y="98" width="4" height="4" rx="1" fill="#67d4ff"/>
-      <rect class="bit-a" x="522" y="98" width="4" height="4" rx="1" fill="#67d4ff"/>
+    <g font-size="12.5" xml:space="preserve">
+      <text x="350" y="128"><tspan fill="#79a7ff">role</tspan><tspan fill="#596171">       : </tspan><tspan fill="#d8dde7">AI Research &amp; Development</tspan></text>
+      <text x="350" y="157"><tspan fill="#79a7ff">degree</tspan><tspan fill="#596171">     : </tspan><tspan fill="#d8dde7">Computer Engineering</tspan></text>
+      <text x="350" y="186"><tspan fill="#79a7ff">focus</tspan><tspan fill="#596171">      : </tspan><tspan fill="#d8dde7">Rust · low-level · machine learning</tspan></text>
+      <text x="350" y="215"><tspan fill="#79a7ff">interests</tspan><tspan fill="#596171">  : </tspan><tspan fill="#d8dde7">distributed systems · concurrency</tspan></text>
+      <text x="350" y="244"><tspan fill="#79a7ff">languages</tspan><tspan fill="#596171">  : </tspan><tspan fill="#d8dde7">Rust · Python · C · Java · SQL</tspan></text>
+      <text x="350" y="273"><tspan fill="#79a7ff">environment</tspan><tspan fill="#596171">: </tspan><tspan fill="#d8dde7">Arch Linux · Neovim · zsh</tspan></text>
+      <text x="350" y="302"><tspan fill="#79a7ff">building</tspan><tspan fill="#596171">   : </tspan><tspan fill="#d8dde7">reliable systems, from bytes to models</tspan></text>
     </g>
 
-    <g class="runtime">
-      <circle cx="638" cy="96" r="12" fill="#0a0c10" stroke="#70bdff" stroke-width="1.8"/>
-      <path d="M632 96h12M638 90v12" stroke="#70bdff" stroke-width="1.4" stroke-linecap="round"/>
-    </g>
-
-    <g class="compute">
-      <rect x="745" y="84" width="24" height="24" rx="7" fill="#0a0c10" stroke="#849dff" stroke-width="1.8"/>
-      <path d="M751 92h12M751 96h8M751 100h10" stroke="#849dff" stroke-width="1.3" stroke-linecap="round"/>
-    </g>
-
-    <g class="model">
-      <circle cx="875" cy="96" r="12" fill="#0a0c10" stroke="#aa8bff" stroke-width="1.8"/>
-      <circle cx="875" cy="96" r="4" fill="#aa8bff" opacity=".9"/>
-    </g>
-
-    <g fill="#aeb6c5" font-size="10" text-anchor="middle">
-      <text x="520" y="132">MEMORY</text>
-      <text x="638" y="132">RUNTIME</text>
-      <text x="757" y="132">COMPUTE</text>
-      <text x="875" y="132">MODEL</text>
-    </g>
-
-    <g fill="#626a79" font-size="8.5" text-anchor="middle">
-      <text x="520" y="148">BYTES</text>
-      <text x="638" y="148">OWNERSHIP</text>
-      <text x="757" y="148">PARALLELISM</text>
-      <text x="875" y="148">LEARNING</text>
+    <g transform="translate(350 323)">
+      <rect width="24" height="9" rx="2" fill="#67d4ff"/>
+      <rect x="31" width="24" height="9" rx="2" fill="#70bdff"/>
+      <rect x="62" width="24" height="9" rx="2" fill="#79a7ff"/>
+      <rect x="93" width="24" height="9" rx="2" fill="#849dff"/>
+      <rect x="124" width="24" height="9" rx="2" fill="#957fff"/>
+      <rect x="155" width="24" height="9" rx="2" fill="#aa8bff"/>
     </g>
   </g>
 </svg>
