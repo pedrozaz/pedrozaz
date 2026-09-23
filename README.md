@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile.svg" width="100%" alt="Guilherme Pedroza — Rust, low-level systems, and machine learning" />
+  <img src="assets/neofetch-profile.svg" width="100%" alt="Guilherme Pedroza — Rust, low-level systems, and machine learning" />
 </p>
 
 ## About
@@ -8,4 +8,4 @@ Computer Engineering student focused on **Rust, low-level systems, and machine l
 
 Currently working in Artificial Intelligence R&D, building systems for real-world problems.
 
-<sub>Uberlândia, Brazil · Open to research, systems, and applied AI conversations.</sub>
+**Open to:** projects and research opportunities.
